@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de Confección</title>
+    <link rel="stylesheet" href="css/styel.css">
+    <link rel="stylesheet" href="js/script.js">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>CONFE FAMILIAR</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#carrito" class="cart">Carrito</a></li>
+            </ul>
+        </nav>
+        <!-- Banner -->
+        <section class="banner">
+            <div class="banner-text">
+                <h2>Confección con amor y paz</h2>
+                <p>Calidad en cada puntada, para ti.</p>
+                <a href="#servicios" class="cta">Ver servicios</a>
+            </div>
+        </section>
+    </header>
+    <!-- Sección de Servicios -->
+<section id="servicios" class="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-grid">
+        <div class="servicio-item">
+            <img src="./img/servicio1.jpg" alt="Servicio 1">
+            <h3>Confección de Ropa a Medida</h3>
+            <p>Creación de prendas personalizadas adaptadas a tus necesidades y estilo.</p>
+            <a href="#" class="btn-servicio">Agregar al carrito</a>
+        </div>
+        <div class="servicio-item">
+            <img src="./img/servicio2.jpg" alt="Servicio 2">
+            <h3>Arreglos y Modificaciones</h3>
+            <p>Ajustes de ropa para mejorar la comodidad y el estilo.</p>
+            <a href="#" class="btn-servicio">Agregar al carrito</a>
+        </div>
+        <div class="servicio-item">
+            <img src="./img/servicio3.jpg" alt="Servicio 3">
+            <h3>Diseño de Uniformes</h3>
+            <p>Confección de uniformes personalizados para empresas y escuelas.</p>
+            <a href="#" class="btn-servicio">Agregar al carrito</a>
+        </div>
+    </div>
+</section>
+<!-- Sección de Galería -->
+<section id="galeria" class="galeria">
+    <h2>Galería de Trabajos</h2>
+    <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <img src="./img/fami9.jpg" alt="Trabajo 1">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/fami8.jpg" alt="Trabajo 2">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/fami3.jpg" alt="Trabajo 3">
+            </div>
+        <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+</section>
+<script src="js/script.js"></script>
+<!-- Sección de Contacto -->
+<section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+    </form>
+</section>
+<!-- Carrito de Compras -->
+<section id="carrito" class="carrito">
+    <h2>Carrito de Compras</h2>
+    <div class="carrito-items"></div>
+    <div class="carrito-total">
+        <p>Total: <span id="total-precio">0.00</span> PEN</p>
+        <button class="btn-comprar">Proceder al Pago</button>
+    </div>
+</section>
+
+</body>
+</html>
